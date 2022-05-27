@@ -1,0 +1,14 @@
+{
+    "name": "litesaml/schemas",
+    "description": "description",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "William",
+            "email": "work@suppo.fr"
+        }
+    ],
+    "require": {
+    }
+}
