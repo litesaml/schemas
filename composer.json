@@ -29,7 +29,7 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
-        "phpcs": "vendor/bin/phpcbf --standard=PSR12 --exclude=Generic.Files.LineLength ./src",
+        "phpcs": "vendor/bin/phpcs --standard=PSR12 --exclude=Generic.Files.LineLength ./src",
         "phpstan": "vendor/bin/phpstan analyse --memory-limit 512M --ansi"
     }
 }
