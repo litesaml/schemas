@@ -4,6 +4,12 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## 3.0.0 (2025-02-20)
+
+### Features
+
+* Can validate given xml
+
 ## 2.0.0 (2025-02-19)
 
 ### Features
