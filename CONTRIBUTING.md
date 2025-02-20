@@ -12,8 +12,8 @@ First, please describe your needs in a new [issue](https://github.com/litesaml/s
 ## How to run test
 
 ```shell
-docker run --rm -it -w /app -v $PWD:/app webdevops/php:8.2 composer install
-docker run --rm -it -w /app -v $PWD:/app webdevops/php:8.2 composer test
-docker run --rm -it -w /app -v $PWD:/app webdevops/php:8.2 composer phpcs
-docker run --rm -it -w /app -v $PWD:/app webdevops/php:8.2 composer phpstan
+docker run --rm -it -w /app -v $PWD:/app webdevops/php:8.1 composer install
+docker run --rm -it -w /app -v $PWD:/app webdevops/php:8.1 composer test
+docker run --rm -it -w /app -v $PWD:/app webdevops/php:8.1 composer phpcs
+docker run --rm -it -w /app -v $PWD:/app webdevops/php:8.1 composer phpstan
 ```

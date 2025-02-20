@@ -7,6 +7,8 @@ Deliver schemas for Lite Saml library
 
 ## Installation
 
+This package requires `php:^8.1`
+
 You can install it via composer:
 
 ```bash
