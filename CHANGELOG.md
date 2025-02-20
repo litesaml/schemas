@@ -4,6 +4,12 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## 3.1.0 (2025-02-20)
+
+### Code Refactoring
+
+* Downgrade requirement to PHP 8.1
+
 ## 3.0.0 (2025-02-20)
 
 ### Features
