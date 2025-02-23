@@ -57,6 +57,24 @@ EOF;
     }
 
     #[Test]
+    public function can_have_errors_on_empty_xml(): void
+    {
+        $schemaName = 'saml-schema-metadata-2.0.xsd';
+
+        $xml = '';
+
+        $errorBag = Schema::validate($xml, $schemaName);
+
+        $this->assertTrue($errorBag->hasErrors());
+
+        $this->assertCount(1, $errorBag->getErrors());
+
+        $errors = $errorBag->getErrors();
+
+        $this->assertEquals("XML must not be empty", $errors[0]->message);
+    }
+
+    #[Test]
     public function cant_validated_unexpected_schema() : void
     {
         $wrongSchemaName = 'unexpected.xsd';

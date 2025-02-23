@@ -24,6 +24,14 @@ class Schema
             );
         });
 
+        if ($xml === '') {
+            restore_error_handler();
+
+            $errorBag->addError(LIBXML_ERR_FATAL, 0, 'XML must not be empty');
+
+            return $errorBag;
+        }
+
         libxml_clear_errors();
 
         $doc = new \DOMDocument();
